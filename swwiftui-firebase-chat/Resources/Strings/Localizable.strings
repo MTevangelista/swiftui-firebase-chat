@@ -1,6 +1,11 @@
 // MARK:- Authentication
+"authentication" = "Authentication";
 "authMode" = "Authentication mode";
 "createAccount" = "Create Account";
+"logIn" = "Log In";
 "signIn" = "Sign In";
 "signUp" = "Sign Up";
 "personFillImage" = "person.fill";
+"enterYourEmail" = "Enter your email";
+"enterYourPassword" = "Enter your password";
+
