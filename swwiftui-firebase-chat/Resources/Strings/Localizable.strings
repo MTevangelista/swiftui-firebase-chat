@@ -1,0 +1,6 @@
+// MARK:- Authentication
+"authMode" = "Authentication mode";
+"createAccount" = "Create Account";
+"signIn" = "Sign In";
+"signUp" = "Sign Up";
+"personFillImage" = "person.fill";

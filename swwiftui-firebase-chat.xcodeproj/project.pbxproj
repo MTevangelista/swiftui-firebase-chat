@@ -3,23 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6DA495EA277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA495E9277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift */; };
-		6DA495EC277E6D0C005A8EDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA495EB277E6D0C005A8EDB /* ContentView.swift */; };
 		6DA495EE277E6D11005A8EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA495ED277E6D11005A8EDB /* Assets.xcassets */; };
 		6DA495F1277E6D11005A8EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA495F0277E6D11005A8EDB /* Preview Assets.xcassets */; };
+		6DA49603277E7069005A8EDB /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA49602277E7069005A8EDB /* AuthenticationView.swift */; };
+		6DA4960B277E76F6005A8EDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DA4960A277E76F6005A8EDB /* Localizable.strings */; };
+		6DA4960D277E7775005A8EDB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4960C277E7775005A8EDB /* R.generated.swift */; };
+		6DA49610277E9835005A8EDB /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4960F277E9835005A8EDB /* AuthenticationViewModel.swift */; };
+		B493728BBFF5176315BCA1E9 /* Pods_swwiftui_firebase_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC8FDCD70119A021A9498E /* Pods_swwiftui_firebase_chat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11FC8FDCD70119A021A9498E /* Pods_swwiftui_firebase_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swwiftui_firebase_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA495E6277E6D0C005A8EDB /* swwiftui-firebase-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swwiftui-firebase-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA495E9277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swwiftui_firebase_chatApp.swift; sourceTree = "<group>"; };
-		6DA495EB277E6D0C005A8EDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6DA495ED277E6D11005A8EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DA495F0277E6D11005A8EDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6DA495F2277E6D11005A8EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DA49602277E7069005A8EDB /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		6DA4960A277E76F6005A8EDB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		6DA4960C277E7775005A8EDB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		6DA4960F277E9835005A8EDB /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		D15ED06742F44F651893B50A /* Pods-swwiftui-firebase-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swwiftui-firebase-chat.release.xcconfig"; path = "Target Support Files/Pods-swwiftui-firebase-chat/Pods-swwiftui-firebase-chat.release.xcconfig"; sourceTree = "<group>"; };
+		F5D1CDB4CF629192B05A2CF8 /* Pods-swwiftui-firebase-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swwiftui-firebase-chat.debug.xcconfig"; path = "Target Support Files/Pods-swwiftui-firebase-chat/Pods-swwiftui-firebase-chat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B493728BBFF5176315BCA1E9 /* Pods_swwiftui_firebase_chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,8 @@
 			children = (
 				6DA495E8277E6D0C005A8EDB /* swwiftui-firebase-chat */,
 				6DA495E7277E6D0C005A8EDB /* Products */,
+				BB940F9776561665184596AD /* Pods */,
+				81C8B30D512B5012EE827826 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +65,8 @@
 		6DA495E8277E6D0C005A8EDB /* swwiftui-firebase-chat */ = {
 			isa = PBXGroup;
 			children = (
-				6DA495E9277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift */,
-				6DA495EB277E6D0C005A8EDB /* ContentView.swift */,
-				6DA495ED277E6D11005A8EDB /* Assets.xcassets */,
+				6DA495F8277E6F0A005A8EDB /* Resources */,
+				6DA495F9277E6F1A005A8EDB /* Sources */,
 				6DA495F2277E6D11005A8EDB /* Info.plist */,
 				6DA495EF277E6D11005A8EDB /* Preview Content */,
 			);
@@ -69,6 +81,107 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6DA495F8277E6F0A005A8EDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DA49607277E7493005A8EDB /* Strings */,
+				6DA495FC277E6F54005A8EDB /* Assets */,
+				6DA4960C277E7775005A8EDB /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DA495F9277E6F1A005A8EDB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6DA495FA277E6F2B005A8EDB /* Application */,
+				6DA495FB277E6F33005A8EDB /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6DA495FA277E6F2B005A8EDB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6DA495E9277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6DA495FB277E6F33005A8EDB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6DA495FD277E6FBA005A8EDB /* Authentication */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6DA495FC277E6F54005A8EDB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6DA495ED277E6D11005A8EDB /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6DA495FD277E6FBA005A8EDB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6DA49600277E6FD7005A8EDB /* Model */,
+				6DA495FF277E6FD2005A8EDB /* View */,
+				6DA495FE277E6FC7005A8EDB /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6DA495FE277E6FC7005A8EDB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6DA4960F277E9835005A8EDB /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6DA495FF277E6FD2005A8EDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DA49602277E7069005A8EDB /* AuthenticationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DA49600277E6FD7005A8EDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DA49607277E7493005A8EDB /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				6DA4960A277E76F6005A8EDB /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		81C8B30D512B5012EE827826 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11FC8FDCD70119A021A9498E /* Pods_swwiftui_firebase_chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB940F9776561665184596AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5D1CDB4CF629192B05A2CF8 /* Pods-swwiftui-firebase-chat.debug.xcconfig */,
+				D15ED06742F44F651893B50A /* Pods-swwiftui-firebase-chat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DA495F5277E6D11005A8EDB /* Build configuration list for PBXNativeTarget "swwiftui-firebase-chat" */;
 			buildPhases = (
+				C588049FA4257348C6E4774A /* [CP] Check Pods Manifest.lock */,
+				6DA49604277E72C6005A8EDB /* ShellScript */,
 				6DA495E2277E6D0C005A8EDB /* Sources */,
 				6DA495E3277E6D0C005A8EDB /* Frameworks */,
 				6DA495E4277E6D0C005A8EDB /* Resources */,
+				26BFC09538D24B379E6771EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +243,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DA495F1277E6D11005A8EDB /* Preview Assets.xcassets in Resources */,
+				6DA4960B277E76F6005A8EDB /* Localizable.strings in Resources */,
 				6DA495EE277E6D11005A8EDB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26BFC09538D24B379E6771EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swwiftui-firebase-chat/Pods-swwiftui-firebase-chat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swwiftui-firebase-chat/Pods-swwiftui-firebase-chat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swwiftui-firebase-chat/Pods-swwiftui-firebase-chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA49604277E72C6005A8EDB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/swwiftui-firebase-chat/Resources/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/swwiftui-firebase-chat/Resources/R.generated.swift\"\n";
+		};
+		C588049FA4257348C6E4774A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swwiftui-firebase-chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6DA495E2277E6D0C005A8EDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA495EC277E6D0C005A8EDB /* ContentView.swift in Sources */,
+				6DA49610277E9835005A8EDB /* AuthenticationViewModel.swift in Sources */,
+				6DA49603277E7069005A8EDB /* AuthenticationView.swift in Sources */,
 				6DA495EA277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift in Sources */,
+				6DA4960D277E7775005A8EDB /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +444,7 @@
 		};
 		6DA495F6277E6D11005A8EDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D1CDB4CF629192B05A2CF8 /* Pods-swwiftui-firebase-chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +467,7 @@
 		};
 		6DA495F7277E6D11005A8EDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15ED06742F44F651893B50A /* Pods-swwiftui-firebase-chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
