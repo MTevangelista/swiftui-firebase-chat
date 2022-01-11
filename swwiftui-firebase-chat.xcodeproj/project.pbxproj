@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D4251C1278E4F4D008AC707 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D4251C0278E4F4D008AC707 /* GoogleService-Info.plist */; };
 		6D80919A278D18C2009D5498 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D809199278D18C2009D5498 /* R.generated.swift */; };
 		6DA495EA277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA495E9277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift */; };
 		6DA495EE277E6D11005A8EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA495ED277E6D11005A8EDB /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		11FC8FDCD70119A021A9498E /* Pods_swwiftui_firebase_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swwiftui_firebase_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D4251C0278E4F4D008AC707 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6D809199278D18C2009D5498 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		6DA495E6277E6D0C005A8EDB /* swwiftui-firebase-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swwiftui-firebase-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA495E9277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swwiftui_firebase_chatApp.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				6DA495F8277E6F0A005A8EDB /* Resources */,
 				6DA495F9277E6F1A005A8EDB /* Sources */,
 				6DA495F2277E6D11005A8EDB /* Info.plist */,
+				6D4251C0278E4F4D008AC707 /* GoogleService-Info.plist */,
 				6DA495EF277E6D11005A8EDB /* Preview Content */,
 			);
 			path = "swwiftui-firebase-chat";
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DA495F1277E6D11005A8EDB /* Preview Assets.xcassets in Resources */,
+				6D4251C1278E4F4D008AC707 /* GoogleService-Info.plist in Resources */,
 				6DA4960B277E76F6005A8EDB /* Localizable.strings in Resources */,
 				6DA495EE277E6D11005A8EDB /* Assets.xcassets in Resources */,
 			);

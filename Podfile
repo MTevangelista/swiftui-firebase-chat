@@ -7,5 +7,8 @@ target 'swwiftui-firebase-chat' do
 
   # Pods for swwiftui-firebase-chat
   pod 'R.swift'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 
 end
