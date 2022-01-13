@@ -8,28 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		6D4251C1278E4F4D008AC707 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D4251C0278E4F4D008AC707 /* GoogleService-Info.plist */; };
+		6D4251C6278F4D72008AC707 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251C5278F4D72008AC707 /* AuthInteractor.swift */; };
+		6D4251C9278F4DE3008AC707 /* AuthRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251C8278F4DE3008AC707 /* AuthRemoteDataSource.swift */; };
+		6D4251CC278F517F008AC707 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251CB278F517F008AC707 /* AuthRequest.swift */; };
+		6D4251CE278F87D1008AC707 /* AuthUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251CD278F87D1008AC707 /* AuthUIState.swift */; };
+		6D4251D5278F8EDD008AC707 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251D4278F8EDD008AC707 /* AlertView.swift */; };
+		6D4251D9278F9CF3008AC707 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251D8278F9CF3008AC707 /* LoadingButton.swift */; };
+		6D4251DD278FB1FE008AC707 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251DC278FB1FD008AC707 /* FirebaseManager.swift */; };
 		6D80919A278D18C2009D5498 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D809199278D18C2009D5498 /* R.generated.swift */; };
 		6DA495EA277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA495E9277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift */; };
 		6DA495EE277E6D11005A8EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA495ED277E6D11005A8EDB /* Assets.xcassets */; };
 		6DA495F1277E6D11005A8EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA495F0277E6D11005A8EDB /* Preview Assets.xcassets */; };
-		6DA49603277E7069005A8EDB /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA49602277E7069005A8EDB /* AuthenticationView.swift */; };
+		6DA49603277E7069005A8EDB /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA49602277E7069005A8EDB /* AuthView.swift */; };
 		6DA4960B277E76F6005A8EDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DA4960A277E76F6005A8EDB /* Localizable.strings */; };
-		6DA49610277E9835005A8EDB /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4960F277E9835005A8EDB /* AuthenticationViewModel.swift */; };
+		6DA49610277E9835005A8EDB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA4960F277E9835005A8EDB /* AuthViewModel.swift */; };
 		B493728BBFF5176315BCA1E9 /* Pods_swwiftui_firebase_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC8FDCD70119A021A9498E /* Pods_swwiftui_firebase_chat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11FC8FDCD70119A021A9498E /* Pods_swwiftui_firebase_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swwiftui_firebase_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4251C0278E4F4D008AC707 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D4251C5278F4D72008AC707 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		6D4251C8278F4DE3008AC707 /* AuthRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSource.swift; sourceTree = "<group>"; };
+		6D4251CB278F517F008AC707 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		6D4251CD278F87D1008AC707 /* AuthUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUIState.swift; sourceTree = "<group>"; };
+		6D4251D4278F8EDD008AC707 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		6D4251D8278F9CF3008AC707 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		6D4251DC278FB1FD008AC707 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		6D809199278D18C2009D5498 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		6DA495E6277E6D0C005A8EDB /* swwiftui-firebase-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swwiftui-firebase-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA495E9277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swwiftui_firebase_chatApp.swift; sourceTree = "<group>"; };
 		6DA495ED277E6D11005A8EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DA495F0277E6D11005A8EDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6DA495F2277E6D11005A8EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DA49602277E7069005A8EDB /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		6DA49602277E7069005A8EDB /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		6DA4960A277E76F6005A8EDB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		6DA4960F277E9835005A8EDB /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		6DA4960F277E9835005A8EDB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D15ED06742F44F651893B50A /* Pods-swwiftui-firebase-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swwiftui-firebase-chat.release.xcconfig"; path = "Target Support Files/Pods-swwiftui-firebase-chat/Pods-swwiftui-firebase-chat.release.xcconfig"; sourceTree = "<group>"; };
 		F5D1CDB4CF629192B05A2CF8 /* Pods-swwiftui-firebase-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swwiftui-firebase-chat.debug.xcconfig"; path = "Target Support Files/Pods-swwiftui-firebase-chat/Pods-swwiftui-firebase-chat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +60,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D4251C2278F4CF8008AC707 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6D4251C5278F4D72008AC707 /* AuthInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6D4251C3278F4D02008AC707 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6D4251C8278F4DE3008AC707 /* AuthRemoteDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		6D4251CF278F8D05008AC707 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6D4251D0278F8D17008AC707 /* Component */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6D4251D0278F8D17008AC707 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				6D4251D6278F9CDC008AC707 /* LoadingButton */,
+				6D4251D1278F8D25008AC707 /* Alert */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		6D4251D1278F8D25008AC707 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				6D4251D4278F8EDD008AC707 /* AlertView.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		6D4251D6278F9CDC008AC707 /* LoadingButton */ = {
+			isa = PBXGroup;
+			children = (
+				6D4251D8278F9CF3008AC707 /* LoadingButton.swift */,
+			);
+			path = LoadingButton;
+			sourceTree = "<group>";
+		};
+		6D4251DA278FB1B0008AC707 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6D4251DB278FB1C5008AC707 /* Firebase */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6D4251DB278FB1C5008AC707 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				6D4251DC278FB1FD008AC707 /* FirebaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		6DA495DD277E6D0B005A8EDB = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				6DA495FA277E6F2B005A8EDB /* Application */,
+				6D4251CF278F8D05008AC707 /* Common */,
 				6DA495FB277E6F33005A8EDB /* Modules */,
+				6D4251DA278FB1B0008AC707 /* Network */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -133,6 +214,8 @@
 				6DA49600277E6FD7005A8EDB /* Model */,
 				6DA495FF277E6FD2005A8EDB /* View */,
 				6DA495FE277E6FC7005A8EDB /* ViewModel */,
+				6D4251C2278F4CF8008AC707 /* Interactor */,
+				6D4251C3278F4D02008AC707 /* DataSource */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -140,7 +223,7 @@
 		6DA495FE277E6FC7005A8EDB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6DA4960F277E9835005A8EDB /* AuthenticationViewModel.swift */,
+				6DA4960F277E9835005A8EDB /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -148,7 +231,7 @@
 		6DA495FF277E6FD2005A8EDB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6DA49602277E7069005A8EDB /* AuthenticationView.swift */,
+				6DA49602277E7069005A8EDB /* AuthView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +239,8 @@
 		6DA49600277E6FD7005A8EDB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6D4251CB278F517F008AC707 /* AuthRequest.swift */,
+				6D4251CD278F87D1008AC707 /* AuthUIState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,8 +405,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA49610277E9835005A8EDB /* AuthenticationViewModel.swift in Sources */,
-				6DA49603277E7069005A8EDB /* AuthenticationView.swift in Sources */,
+				6DA49610277E9835005A8EDB /* AuthViewModel.swift in Sources */,
+				6D4251C6278F4D72008AC707 /* AuthInteractor.swift in Sources */,
+				6D4251D9278F9CF3008AC707 /* LoadingButton.swift in Sources */,
+				6D4251D5278F8EDD008AC707 /* AlertView.swift in Sources */,
+				6D4251DD278FB1FE008AC707 /* FirebaseManager.swift in Sources */,
+				6D4251CC278F517F008AC707 /* AuthRequest.swift in Sources */,
+				6D4251C9278F4DE3008AC707 /* AuthRemoteDataSource.swift in Sources */,
+				6DA49603277E7069005A8EDB /* AuthView.swift in Sources */,
+				6D4251CE278F87D1008AC707 /* AuthUIState.swift in Sources */,
 				6DA495EA277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift in Sources */,
 				6D80919A278D18C2009D5498 /* R.generated.swift in Sources */,
 			);

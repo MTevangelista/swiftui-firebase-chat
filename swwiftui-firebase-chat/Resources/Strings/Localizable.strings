@@ -1,3 +1,9 @@
+// MARK:- Common
+"chatApp" = "ChatApp";
+"ok" = "Ok";
+"somethingWrongHappened" = "Something wrong happened";
+
+
 // MARK:- Authentication
 "authentication" = "Authentication";
 "authMode" = "Authentication mode";
