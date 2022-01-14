@@ -13,6 +13,8 @@ struct CustomTextFieldStyle: TextFieldStyle {
 struct AuthView: View {
     @StateObject var viewModel: AuthViewModel
     
+    @State var shouldPresentImagePicker = false
+    
     var body: some View {
         ZStack {
             if case AuthUIState.error(let errorMessage) = viewModel.uiState {
@@ -57,22 +59,41 @@ struct AuthView: View {
     
     var personImageButton: some View {
         Button {
-            
+            shouldPresentImagePicker.toggle()
         } label: {
-            Image(systemName: R.string.localizable.personFillImage())
-                .font(.system(size: 64))
-                .padding()
+            personImage
         }
+        .sheet(isPresented: $shouldPresentImagePicker) {
+            ImagePicker(selectedImage: $viewModel.image, sourceType: .camera)
+        }
+    }
+    
+    var personImage: some View {
+        Group {
+            if viewModel.image.size.width > 0 {
+                Image(uiImage: viewModel.image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 130, height: 130)
+                    .clipShape(Circle())
+            } else {
+                Image(systemName: R.string.localizable.personFillImage())
+                    .font(.system(size: 64))
+                    .padding()
+                    .foregroundColor(.black)
+            }
+        }
+        .overlay(Circle().stroke(Color.black, lineWidth: 3))
+    }
+    
+    var someFormFieldIsEmpty: Bool {
+        viewModel.email.isEmpty || viewModel.passwword.isEmpty
     }
     
     var handleLoadingButtonText: String  {
         viewModel.isLoginMode ? "Log In" : "Create Account"
     }
     
-    var someFormFieldIsEmpty: Bool {
-        viewModel.email.isEmpty || viewModel.passwword.isEmpty
-    }
-
     var backgroundColor: some View {
         Color(.init(white: 0, alpha: 0.05))
             .ignoresSafeArea()

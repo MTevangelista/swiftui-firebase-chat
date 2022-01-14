@@ -8,6 +8,7 @@ class AuthViewModel: ObservableObject {
     
     @Published var uiState: AuthUIState = .none
     @Published var isLoginMode = false
+    @Published var image = UIImage()
     @Published var email = ""
     @Published var passwword = ""
     
@@ -48,6 +49,21 @@ class AuthViewModel: ObservableObject {
                 case .finished: break
                 }
             }, receiveValue: { successSignUp in
+                self.uiState = .success
+                self.persistImageToStorage()
+            })
+    }
+    
+    private func persistImageToStorage() {
+        cancellable = interactor.persistImageToStorage(image: image)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    self.uiState = .error(error.localizedDescription)
+                case .finished: break
+                }
+            }, receiveValue: { savedImage in
                 self.uiState = .success
             })
     }
