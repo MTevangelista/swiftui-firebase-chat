@@ -3,7 +3,7 @@ import Combine
 
 class AuthViewModel: ObservableObject {
     private var cancellable: AnyCancellable?
-
+    
     private let interactor: AuthInteractor
     
     @Published var uiState: AuthUIState = .none
@@ -60,10 +60,29 @@ class AuthViewModel: ObservableObject {
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .failure(let error):
-                    self.uiState = .error(error.localizedDescription)
+                    self.uiState = .error(error.message)
                 case .finished: break
                 }
             }, receiveValue: { savedImage in
+                self.uiState = .success
+                let user = UserRequest(uid: FirebaseManager.getUID(),
+                                       photoURL: savedImage,
+                                       email: self.email,
+                                       password: self.passwword)
+                self.storeUserInformation(user)
+            })
+    }
+    
+    private func storeUserInformation(_ user: UserRequest) {
+        cancellable = interactor.storeUserInformation(request: user)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    self.uiState = .error(error.localizedDescription)
+                case .finished: break
+                }
+            }, receiveValue: { storedUser in
                 self.uiState = .success
             })
     }

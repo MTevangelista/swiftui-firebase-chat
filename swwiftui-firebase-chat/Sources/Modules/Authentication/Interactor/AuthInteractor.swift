@@ -12,7 +12,11 @@ struct AuthInteractor {
         return remote.signUp(request: request)
     }
     
-    func persistImageToStorage(image: UIImage) -> Future<Bool, Error> {
+    func persistImageToStorage(image: UIImage) -> Future<URL, AppError> {
         return remote.persistImageToStorage(image: image)
+    }
+    
+    func storeUserInformation(request: UserRequest) -> Future<Bool, Error> {
+        return remote.storeUserInformation(request: request)
     }
 }
