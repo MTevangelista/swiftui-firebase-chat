@@ -10,6 +10,9 @@
 		6D28A57E2791D32C00D58838 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28A57D2791D32C00D58838 /* AppError.swift */; };
 		6D28A5822791F46100D58838 /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28A5812791F46100D58838 /* AuthConstants.swift */; };
 		6D28A5852791FE7100D58838 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28A5842791FE7100D58838 /* UserRequest.swift */; };
+		6D28A58A2792137100D58838 /* MainMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28A5892792137100D58838 /* MainMessagesView.swift */; };
+		6D28A58C2792283A00D58838 /* CustomNabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28A58B2792283A00D58838 /* CustomNabBar.swift */; };
+		6D28A58E27923B7E00D58838 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28A58D27923B7E00D58838 /* MessageRow.swift */; };
 		6D4251C1278E4F4D008AC707 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D4251C0278E4F4D008AC707 /* GoogleService-Info.plist */; };
 		6D4251C6278F4D72008AC707 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251C5278F4D72008AC707 /* AuthInteractor.swift */; };
 		6D4251C9278F4DE3008AC707 /* AuthRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4251C8278F4DE3008AC707 /* AuthRemoteDataSource.swift */; };
@@ -35,6 +38,9 @@
 		6D28A57D2791D32C00D58838 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		6D28A5812791F46100D58838 /* AuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
 		6D28A5842791FE7100D58838 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		6D28A5892792137100D58838 /* MainMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessagesView.swift; sourceTree = "<group>"; };
+		6D28A58B2792283A00D58838 /* CustomNabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNabBar.swift; sourceTree = "<group>"; };
+		6D28A58D27923B7E00D58838 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		6D4251C0278E4F4D008AC707 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6D4251C5278F4D72008AC707 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		6D4251C8278F4DE3008AC707 /* AuthRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSource.swift; sourceTree = "<group>"; };
@@ -84,6 +90,16 @@
 				6D28A5812791F46100D58838 /* AuthConstants.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		6D28A5862792132E00D58838 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				6D28A5892792137100D58838 /* MainMessagesView.swift */,
+				6D28A58B2792283A00D58838 /* CustomNabBar.swift */,
+				6D28A58D27923B7E00D58838 /* MessageRow.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		6D4251C2278F4CF8008AC707 /* Interactor */ = {
@@ -232,6 +248,7 @@
 		6DA495FB277E6F33005A8EDB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6D28A5862792132E00D58838 /* Message */,
 				6DA495FD277E6FBA005A8EDB /* Authentication */,
 			);
 			path = Modules;
@@ -445,8 +462,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D28A5822791F46100D58838 /* AuthConstants.swift in Sources */,
+				6D28A58A2792137100D58838 /* MainMessagesView.swift in Sources */,
 				6DA49610277E9835005A8EDB /* AuthViewModel.swift in Sources */,
 				6D4251C6278F4D72008AC707 /* AuthInteractor.swift in Sources */,
+				6D28A58C2792283A00D58838 /* CustomNabBar.swift in Sources */,
 				6D4251D9278F9CF3008AC707 /* LoadingButton.swift in Sources */,
 				6D28A5852791FE7100D58838 /* UserRequest.swift in Sources */,
 				6D4251E2278FB741008AC707 /* ImagePickerCoordinator.swift in Sources */,
@@ -459,6 +478,7 @@
 				6D4251CE278F87D1008AC707 /* AuthUIState.swift in Sources */,
 				6D4251E0278FB728008AC707 /* ImagePicker.swift in Sources */,
 				6DA495EA277E6D0C005A8EDB /* swwiftui_firebase_chatApp.swift in Sources */,
+				6D28A58E27923B7E00D58838 /* MessageRow.swift in Sources */,
 				6D80919A278D18C2009D5498 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
