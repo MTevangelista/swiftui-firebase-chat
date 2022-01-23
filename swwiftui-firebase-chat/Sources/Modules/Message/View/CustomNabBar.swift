@@ -1,12 +1,21 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CustomNavBar: View {
-    @State var shouldShowLogOutOptions = false
+    let photoURL: String
+    let userEmail: String
+    
+    @State private var shouldShowLogOutOptions = false
     
     var body: some View {
         HStack(spacing: 16) {
-            Image(systemName: "person.fill")
-                .font(.system(size: 34, weight: .heavy))
+            
+            WebImage(url: URL(string: photoURL))
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.black, lineWidth: 1))
             
             VStack(alignment: .leading, spacing: 4) {
                 accountStatus
@@ -31,7 +40,7 @@ struct CustomNavBar: View {
     
     var accountStatus: some View {
         Group {
-            Text("USERNAME")
+            Text(userEmail)
                 .font(.system(size: 24, weight: .bold))
             
             HStack {
@@ -49,21 +58,16 @@ struct CustomNavBar: View {
         Button {
             shouldShowLogOutOptions.toggle()
         } label: {
-            Image(systemName: "gear")
+            Image(systemName: R.string.localizable.gearSystemImage())
                 .font(.system(size: 24, weight: .bold))
                 .foregroundColor(Color(.label))
-        }
-    }
-    
-    var actionSheet: some View {
-        Group {
-            
         }
     }
 }
 
 struct CustomNavBar_Previews: PreviewProvider {
     static var previews: some View {
-        CustomNavBar()
+        CustomNavBar(photoURL: R.string.localizable.exampleImageURL(),
+                     userEmail: R.string.localizable.userEmailExample())
     }
 }

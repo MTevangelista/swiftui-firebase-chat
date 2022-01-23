@@ -2,7 +2,11 @@
 "chatApp" = "ChatApp";
 "ok" = "Ok";
 "somethingWrongHappened" = "Something wrong happened";
+"gearSystemImage" = "gear";
 
+// MARK:- Message
+"exampleImageURL" = "https://cdn.pixabay.com/photo/2022/01/18/16/49/town-6947538_960_720.jpg";
+"userEmailExample" = "teste@gmail.com";
 
 // MARK:- Authentication
 "authentication" = "Authentication";
@@ -11,7 +15,6 @@
 "logIn" = "Log In";
 "signIn" = "Sign In";
 "signUp" = "Sign Up";
-"personFillImage" = "person.fill";
+"personFillSystemImage" = "person.fill";
 "enterYourEmail" = "Enter your email";
 "enterYourPassword" = "Enter your password";
-

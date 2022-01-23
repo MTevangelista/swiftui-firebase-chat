@@ -1,12 +1,17 @@
 import SwiftUI
 
-struct MainMessagesView: View {
+struct MessagesView: View {
     @State private var showActionSheet = false
+    
+    @ObservedObject var viewModel: MessagesViewModel
     
     var body: some View {
         NavigationView {
             VStack {
-                CustomNavBar()
+                //Text("User: \(viewModel.chatUser?.uid ?? "")")
+                
+                CustomNavBar(photoURL: viewModel.chatUser?.photoURL ?? R.string.localizable.exampleImageURL(),
+                             userEmail: viewModel.chatUser?.email ?? R.string.localizable.userEmailExample())
                 
                 ScrollView {
                     VStack {
@@ -24,7 +29,7 @@ struct MainMessagesView: View {
     
     var newMessageButton: some View {
         Button() {
-
+            
         } label: {
             Text("+ New Message")
                 .frame(maxWidth: .infinity)
@@ -35,14 +40,14 @@ struct MainMessagesView: View {
                 .padding(.horizontal)
                 .shadow(color: .black, radius: 3)
         }
-
+        
     }
 }
 
-struct MainMessagesView_Previews: PreviewProvider {
+struct MessagesViewView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self) {
-            MainMessagesView()
+            MessagesView(viewModel: MessagesViewModel(interactor: MessageInteractor()))
                 .preferredColorScheme($0)
         }
     }

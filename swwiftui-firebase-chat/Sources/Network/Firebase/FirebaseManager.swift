@@ -15,8 +15,8 @@ class FirebaseManager: NSObject {
         super.init()
     }
     
-    static func getUID() -> String {
-        guard let uid = shared.auth.currentUser?.uid else { return "" }
+    static func getUID() -> String? {
+        guard let uid = shared.auth.currentUser?.uid else { return nil }
         return uid
     }
 }

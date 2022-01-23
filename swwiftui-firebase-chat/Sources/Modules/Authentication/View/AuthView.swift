@@ -17,7 +17,7 @@ struct AuthView: View {
     
     var body: some View {
         ZStack {
-            if case AuthUIState.error(let errorMessage) = viewModel.uiState {
+            if case UIState.error(let errorMessage) = viewModel.uiState {
                 AlertView(value: errorMessage)
             }
             
@@ -46,7 +46,7 @@ struct AuthView: View {
                         
                         LoadingButton(action: viewModel.handleAction,
                                       text: handleLoadingButtonText,
-                                      shouldPresentProgress: viewModel.uiState == AuthUIState.loading,
+                                      shouldPresentProgress: viewModel.uiState == UIState.loading,
                                       isDisabled: someFormFieldIsEmpty)
                     }
                     .padding()
@@ -77,7 +77,7 @@ struct AuthView: View {
                     .frame(width: 130, height: 130)
                     .clipShape(Circle())
             } else {
-                Image(systemName: R.string.localizable.personFillImage())
+                Image(systemName: R.string.localizable.personFillSystemImage())
                     .font(.system(size: 64))
                     .padding()
                     .foregroundColor(.black)

@@ -35,8 +35,12 @@ struct AuthRemoteDataSource {
     func persistImageToStorage(image: UIImage) -> Future<URL, AppError> {
         return Future { promise in
             guard let imageData = image.jpegData(compressionQuality: 0.5) else { return }
+            guard let uid = FirebaseManager.getUID() else {
+                promise(.failure(AppError(message: FirebaseConstants.ErrorMessage.couldNotFindFirebaseUID)))
+                return
+            }
             let newMetadata = StorageMetadata()
-            let ref = FirebaseManager.shared.storage.reference(withPath: FirebaseManager.getUID())
+            let ref = FirebaseManager.shared.storage.reference(withPath: uid)
             
             newMetadata.contentType = "image/jpeg"
             ref.putData(imageData, metadata: newMetadata) { metadata, error in
@@ -65,7 +69,7 @@ struct AuthRemoteDataSource {
     func storeUserInformation(request: UserRequest) -> Future<Bool, Error> {
         return Future { promise in
             FirebaseManager.shared.firestore
-                .collection(AuthConstants.users)
+                .collection(FirebaseConstants.Collection.users)
                 .document(request.uid)
                 .setData(request.dictionary) { error in
                     if let error = error {

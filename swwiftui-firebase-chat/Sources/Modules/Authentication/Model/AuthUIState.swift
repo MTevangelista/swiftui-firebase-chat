@@ -1,6 +1,6 @@
-enum AuthUIState: Equatable {
-    case none
-    case loading
-    case success
-    case error(String)
-}
+//enum AuthUIState: Equatable {
+//    case none
+//    case loading
+//    case success
+//    case error(String)
+//}

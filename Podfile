@@ -10,5 +10,6 @@ target 'swwiftui-firebase-chat' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'SDWebImageSwiftUI'
 
 end

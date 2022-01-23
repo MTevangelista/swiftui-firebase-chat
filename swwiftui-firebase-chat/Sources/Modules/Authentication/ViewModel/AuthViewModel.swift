@@ -6,7 +6,7 @@ class AuthViewModel: ObservableObject {
     
     private let interactor: AuthInteractor
     
-    @Published var uiState: AuthUIState = .none
+    @Published var uiState: UIState = .none
     @Published var isLoginMode = false
     @Published var image = UIImage()
     @Published var email = ""
@@ -65,7 +65,8 @@ class AuthViewModel: ObservableObject {
                 }
             }, receiveValue: { savedImage in
                 self.uiState = .success
-                let user = UserRequest(uid: FirebaseManager.getUID(),
+                guard let uid = FirebaseManager.getUID() else { return }
+                let user = UserRequest(uid: uid,
                                        photoURL: savedImage,
                                        email: self.email,
                                        password: self.passwword)
